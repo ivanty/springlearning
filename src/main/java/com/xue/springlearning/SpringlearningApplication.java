@@ -15,18 +15,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpringlearningApplication {
 
 
-    @Autowired
+    /*@Autowired
     private AuthorSettings authorSettings;
 
     @RequestMapping("/")
     String index(){
         return  "book name is: "+authorSettings.getName()+" and author age is "+authorSettings.getAge();
     }
-
+*/
     public static void main(String[] args) {
-       // SpringApplication.run(SpringlearningApplication.class, args);
-        SpringApplication app=new SpringApplication(SpringlearningApplication.class);
+        SpringApplication.run(SpringlearningApplication.class, args);
+      /*  SpringApplication app=new SpringApplication(SpringlearningApplication.class);
         app.setBannerMode(Banner.Mode.CONSOLE);
-        app.run(args);
+        app.run(args);*/
     }
 }
